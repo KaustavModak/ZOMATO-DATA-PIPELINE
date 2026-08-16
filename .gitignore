@@ -1,0 +1,88 @@
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+ai/.env
+airflow/.env
+
+# dbt credentials
+profiles.yml
+.user.yml
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Jupyter / Python tools
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# Airflow
+# =========================
+airflow/logs/
+airflow/**/logs/
+airflow/**/__pycache__/
+
+# Airflow local database
+airflow/airflow.db
+
+# =========================
+# dbt generated files
+# =========================
+zomato/target/
+zomato/logs/
+zomato/dbt_packages/
+zomato/compiled/
+zomato/run/
+zomato/.user.yml
+
+# =========================
+# dbt cache
+# =========================
+**/.cache/
+
+# =========================
+# Generated / temporary files
+# =========================
+*.tmp
+*.temp
+*.log
+
+# =========================
+# AI generated artifacts
+# =========================
+ai/*.parquet
+ai/*.pkl
+ai/*.pickle
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Data
+# =========================
+data/
